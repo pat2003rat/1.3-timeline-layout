@@ -1,9 +1,137 @@
 *{
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+p{
+  color: white;
+}
+h1{
+  color: #80C0E9;
+  margin-right: 50px;
+}
+h5{
+  color: #BDD0DE;
+  margin-left: 170px;
+}
+.top{
+  position: relative;
+}
+.top-block{
+  background-color: #6CBFEE;
+  width: 783px;
+  padding: 46px;
+  height: 371px;
+  border-radius: 5px;
+  margin-left: 320px;
+  margin-bottom: 14px;
+  transition: background-color 2s, transform;
+  transition:
+}
+.top-block:hover {
+  background-color: #dd550c;
+}
+.top-block:hover::before{
+  color: #03244d;
+}
+.top-block:hover p{
+  color: #03244d;
+  transition: color 1s, transform;
+}
+.top-block:hover h1{
+  color: #03244d;
+  transition: color 1s, transform;
+}
+.top-block h1{
+  color: white;
+  border-bottom: 1px solid white;
+}
+.bottom-block {
+  background-color: #5096C6;
+  width: 783px;
+  height: 275px;
+  padding: 40px;
+  border-radius: 4px;
+  margin-left: 320px;
+  margin-bottom: 14px;
+  transition: background-color 2s, transform;
+}
+.bottom-block:hover {
+  background-color: #32CD32;
+}
+.bottom-block h1{
+  color: white;
+  border-bottom: 1px solid white;
+}
+.bottom-block:hover p{
+  color: #03244d;
+  transition: color 1s, transform;
+}
+.bottom-block:hover h1{
+  color: #03244d;
+  transition: color 1s, transform;
+}
+.time {
+  position: absolute;
+  left: 0px;
+  width: 275px;
+  margin-left: 10px;
+}
+.time h1{
+  text-align: right;
+
+  margin-top: -20px;}
+
+.whole{
+  list-style: none;
 }
 
+.dates{
+  margin-right: 50px;
+}
 
-body{
-  background-color: orange
+.whole::before{
+    position: absolute;
+    top: 50px;
+    width: 10px;
+    height: 700px;
+    content: '';
+    background: #B8DCF5;
+    left: 300px;
+}
+
+.fa{
+  float: right;
+  width: 56px;
+  height: 56px;
+  padding: 10px;
+  background-color: #46A4DA;
+  border: 8px solid #A4D7F9;
+  border-radius: 100%;
+  color: white;
+
+}
+
+.top-block:before{
+  content: "";
+  display: block;
+  margin-top: 6px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-right-color: #6CBFEE;
+  position: absolute;
+  left: 305px;
+  top: 15px;
+}
+
+.bottom-block:before{
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-right-color: #3594CB;
+  position: absolute;
+  left: 305px;
+  top: 15px;
 }
